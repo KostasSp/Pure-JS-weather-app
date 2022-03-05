@@ -17,22 +17,26 @@ class UI {
             </div>
         </div>`;
     if (data.weather[0].description.includes("cloud")) {
-      console.log("clouds!!");
+      console.log("clouds!");
       document.body.style.backgroundImage =
         "url(https://www.howitworksdaily.com/wp-content/uploads/2020/05/sky-4237062_1920.jpg)";
     } else if (data.weather[0].description.includes("rain")) {
-      console.log("Rain!!");
+      console.log("Rain!");
 
       document.body.style.backgroundImage =
         "url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c79f526-868a-4f00-ad94-3cb7b694002a/d6scius-e0ff1f1c-167d-4d25-b9b5-b49cb092629a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi83Yzc5ZjUyNi04NjhhLTRmMDAtYWQ5NC0zY2I3YjY5NDAwMmEvZDZzY2l1cy1lMGZmMWYxYy0xNjdkLTRkMjUtYjliNS1iNDljYjA5MjYyOWEuZ2lmIn1dXX0.kf5UIRMv8WuvlHXLnqL7xAQAxys4MAbVBU5WoYR-aDo)";
     } else {
-      console.log("sun!!");
+      console.log("sun!");
       document.body.style.backgroundImage =
         "url(https://www.ksnt.com/wp-content/uploads/sites/86/2016/03/sunshine_36366417_ver1.0-8.jpg?w=2560&h=1440&crop=1)";
     }
   }
 
   clearUI() {
+    uiContainer.innerHTML = "";
+  }
+
+  clearUItest() {
     uiContainer.innerHTML = "";
   }
 
