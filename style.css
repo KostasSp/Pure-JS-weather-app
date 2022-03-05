@@ -1,0 +1,48 @@
+.mainDiv {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 10vh;
+}
+
+body {
+  background-image: url("https://www.rochesterfirst.com/wp-content/uploads/sites/66/2021/04/rain-drops-on-window-1827098_1920.jpg?strip=1");
+  background-size: cover;
+  background-image: center;
+  /* max-width: 100%;
+  height: auto; */
+}
+
+.search {
+  display: flex;
+  margin-left: 390px;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#submit {
+  display: flex;
+  align-items: center;
+  min-height: auto;
+}
+
+#displayFetchedData {
+  background-color: rgb(104, 112, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 700px;
+}
