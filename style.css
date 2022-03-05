@@ -39,7 +39,7 @@ body {
 }
 
 #displayFetchedData {
-  background-color: rgb(104, 112, 184);
+  background-color: rgb(45, 51, 105);
   display: flex;
   justify-content: center;
   align-items: center;

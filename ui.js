@@ -36,10 +36,6 @@ class UI {
     uiContainer.innerHTML = "";
   }
 
-  clearUItest() {
-    uiContainer.innerHTML = "";
-  }
-
   saveToLS(data) {
     localStorage.setItem("city", JSON.stringify(data));
     console.log("saved to LS");

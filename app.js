@@ -8,17 +8,13 @@ function fetchData(fetchData) {
   fetched.getCurrent(fetchData).then((data) => {
     ui.populateUI(data);
     ui.saveToLS(data);
-    console.log(data.weather[0]);
   });
 }
 
 search.onkeyup = (event) => {
   let currentVal = search.value;
-
   if (currentVal === "") noValue();
-
   if (currentVal.trim() !== 0) button.classList.add("active");
-
   if (event.key === "Enter") {
     currentVal = search.value;
     fetchData(currentVal);
@@ -39,7 +35,6 @@ window.addEventListener("DOMContentLoaded", () => {
   fetched.getCurrent(ui.defaultCity).then((data) => {
     ui.populateUI(data);
     console.log(data.weather[0]);
-    //ui.saveToLS(data);
   });
 });
 
